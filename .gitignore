@@ -1,0 +1,47 @@
+.DS_Store
+
+# Xcode user and generated state
+xcuserdata/
+*.xcuserstate
+DerivedData/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+.build/
+__pycache__/
+*.pyc
+
+# Carthage
+Carthage/Build/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Local PocketBase/runtime data
+pb_data/
+
+# Credentials and signing files
+.env
+.env.*
+!.env.example
+*.mobileprovision
+*.p12
+*.pem
+*.key
+*.p8
+secrets/
+
+# Selbst gehosteter Server
+server/.env
+server/pb_data/
+server/caddy_data/

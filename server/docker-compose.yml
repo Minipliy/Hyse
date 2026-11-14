@@ -1,0 +1,27 @@
+# Startet Hyse auf deinem eigenen Server:
+#   pocketbase  = Datenbank, Konten und Schnittstelle für die App
+#   caddy       = holt automatisch ein HTTPS-Zertifikat für deine Domain
+# Start: im Ordner "server" den Befehl  docker compose up -d  ausführen.
+services:
+  pocketbase:
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - ./pb_data:/pb/pb_data
+      - ../pb_hooks:/pb/pb_hooks:ro
+      - ../pb_migrations:/pb/pb_migrations:ro
+      - ../pb_public:/pb/pb_public:ro
+
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - ./caddy_data:/data
+    depends_on:
+      - pocketbase

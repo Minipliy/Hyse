@@ -1,0 +1,18 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "ABCDE12345.com.deinname.hyse"
+        ],
+        "components": [
+          {
+            "/": "/*",
+            "exclude": true,
+            "comment": "All HTTPS links stay in the browser"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>HyseAppGroup</key>
+    <string>$(HYSE_APP_GROUP)</string>
+    <key>HyseContactEmail</key>
+    <string>$(HYSE_CONTACT_EMAIL)</string>
+    <key>HyseServerHost</key>
+    <string>$(HYSE_SERVER_HOST)</string>
+    <key>ITSAppUsesNonExemptEncryption</key>
+    <false/>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLName</key>
+            <string>com.hyse.HyseApp</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>hyseapp</string>
+            </array>
+        </dict>
+    </array>
+</dict>
+</plist>

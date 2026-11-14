@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1E5C0000000000000000003 /* CalorieTrackerApp/HyseConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E5C0000000000000000002 /* CalorieTrackerApp/HyseConfiguration.swift */; };
+		26FE480830398B1F00EB2026 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FE480730398B1F00EB2026 /* WidgetKit.framework */; };
+		26FE480A30398B1F00EB2026 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FE480930398B1F00EB2026 /* SwiftUI.framework */; };
+		26FE481B30398B2000EB2026 /* HyseWIdget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 26FE480530398B1F00EB2026 /* HyseWIdget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		26FE49503039B3B700EB2026 /* CalorieTrackerApp/LanguageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FE494F3039B3B700EB2026 /* CalorieTrackerApp/LanguageStore.swift */; };
+		26FE4A00303A500000EB2026 /* CalorieTrackerApp/TrainingActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FE4A01303A500000EB2026 /* CalorieTrackerApp/TrainingActivityAttributes.swift */; };
+		26FE4B0B303B000000EB2026 /* HyseWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 26FE4B02303B000000EB2026 /* HyseWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		26FE481930398B2000EB2026 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26F35A5C3038B4DB00A4431A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26FE480430398B1F00EB2026;
+			remoteInfo = CalorieWidgetExtension;
+		};
+		26FE4B0C303B000000EB2026 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26F35A5C3038B4DB00A4431A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26FE4B01303B000000EB2026;
+			remoteInfo = HyseWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		26FE482030398B2000EB2026 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				26FE481B30398B2000EB2026 /* HyseWIdget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26FE4B0A303B000000EB2026 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				26FE4B0B303B000000EB2026 /* HyseWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A1E5C0000000000000000001 /* Hyse.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Hyse.xcconfig; path = Hyse.xcconfig; sourceTree = "<group>"; };
+		A1E5C0000000000000000002 /* CalorieTrackerApp/HyseConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieTrackerApp/HyseConfiguration.swift; sourceTree = SOURCE_ROOT; };
+		26F35A643038B4DB00A4431A /* Hyse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hyse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26FE480530398B1F00EB2026 /* HyseWIdget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HyseWIdget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		26FE480730398B1F00EB2026 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		26FE480930398B1F00EB2026 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		26FE482330398DA600EB2026 /* CalorieWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CalorieWidgetExtension.entitlements; sourceTree = "<group>"; };
+		26FE494F3039B3B700EB2026 /* CalorieTrackerApp/LanguageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieTrackerApp/LanguageStore.swift; sourceTree = SOURCE_ROOT; };
+		26FE4A01303A500000EB2026 /* CalorieTrackerApp/TrainingActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieTrackerApp/TrainingActivityAttributes.swift; sourceTree = SOURCE_ROOT; };
+		26FE4B02303B000000EB2026 /* HyseWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HyseWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		26FE481F30398B2000EB2026 /* Exceptions for "CalorieWidget" folder in "HyseWIdget" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 26FE480430398B1F00EB2026 /* HyseWIdget */;
+		};
+		26FE49513039B3B700EB2026 /* Exceptions for "CalorieTrackerApp" folder in "Hyse" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+				LanguageStore.swift,
+			);
+			target = 26F35A633038B4DB00A4431A /* Hyse */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		26F35A663038B4DB00A4431A /* CalorieTrackerApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				26FE49513039B3B700EB2026 /* Exceptions for "CalorieTrackerApp" folder in "Hyse" target */,
+			);
+			path = CalorieTrackerApp;
+			sourceTree = "<group>";
+		};
+		26FE480B30398B1F00EB2026 /* CalorieWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				26FE481F30398B2000EB2026 /* Exceptions for "CalorieWidget" folder in "HyseWIdget" target */,
+			);
+			path = CalorieWidget;
+			sourceTree = "<group>";
+		};
+		26FE49213039A60600EB2026 /* Assets */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		26FE4B03303B000000EB2026 /* HyseWatch */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = HyseWatch;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26F35A613038B4DB00A4431A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26FE480230398B1F00EB2026 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26FE480A30398B1F00EB2026 /* SwiftUI.framework in Frameworks */,
+				26FE480830398B1F00EB2026 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26FE4B05303B000000EB2026 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26F35A5B3038B4DB00A4431A = {
+			isa = PBXGroup;
+			children = (
+				A1E5C0000000000000000001 /* Hyse.xcconfig */,
+				26FE482330398DA600EB2026 /* CalorieWidgetExtension.entitlements */,
+				26F35A663038B4DB00A4431A /* CalorieTrackerApp */,
+				26FE480B30398B1F00EB2026 /* CalorieWidget */,
+				26FE4B03303B000000EB2026 /* HyseWatch */,
+				26FE480630398B1F00EB2026 /* Frameworks */,
+				26F35A653038B4DB00A4431A /* Products */,
+				26FE49213039A60600EB2026 /* Assets */,
+				26FE49A9303A387D00EB2026 /* Recovered References */,
+			);
+			sourceTree = "<group>";
+		};
+		26F35A653038B4DB00A4431A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26F35A643038B4DB00A4431A /* Hyse.app */,
+				26FE480530398B1F00EB2026 /* HyseWIdget.appex */,
+				26FE4B02303B000000EB2026 /* HyseWatch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26FE480630398B1F00EB2026 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26FE480730398B1F00EB2026 /* WidgetKit.framework */,
+				26FE480930398B1F00EB2026 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		26FE49A9303A387D00EB2026 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				26FE494F3039B3B700EB2026 /* CalorieTrackerApp/LanguageStore.swift */,
+				26FE4A01303A500000EB2026 /* CalorieTrackerApp/TrainingActivityAttributes.swift */,
+				A1E5C0000000000000000002 /* CalorieTrackerApp/HyseConfiguration.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26F35A633038B4DB00A4431A /* Hyse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26F35A6F3038B4DD00A4431A /* Build configuration list for PBXNativeTarget "Hyse" */;
+			buildPhases = (
+				26F35A603038B4DB00A4431A /* Sources */,
+				26F35A613038B4DB00A4431A /* Frameworks */,
+				26F35A623038B4DB00A4431A /* Resources */,
+				26FE482030398B2000EB2026 /* Embed Foundation Extensions */,
+				26FE4B0A303B000000EB2026 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26FE481A30398B2000EB2026 /* PBXTargetDependency */,
+				26FE4B0D303B000000EB2026 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				26F35A663038B4DB00A4431A /* CalorieTrackerApp */,
+				26FE49213039A60600EB2026 /* Assets */,
+			);
+			name = Hyse;
+			packageProductDependencies = (
+			);
+			productName = CalorieTrackerApp;
+			productReference = 26F35A643038B4DB00A4431A /* Hyse.app */;
+			productType = "com.apple.product-type.application";
+		};
+		26FE480430398B1F00EB2026 /* HyseWIdget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26FE481C30398B2000EB2026 /* Build configuration list for PBXNativeTarget "HyseWIdget" */;
+			buildPhases = (
+				26FE480130398B1F00EB2026 /* Sources */,
+				26FE480230398B1F00EB2026 /* Frameworks */,
+				26FE480330398B1F00EB2026 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				26FE480B30398B1F00EB2026 /* CalorieWidget */,
+			);
+			name = HyseWIdget;
+			packageProductDependencies = (
+			);
+			productName = CalorieWidgetExtension;
+			productReference = 26FE480530398B1F00EB2026 /* HyseWIdget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		26FE4B01303B000000EB2026 /* HyseWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26FE4B09303B000000EB2026 /* Build configuration list for PBXNativeTarget "HyseWatch" */;
+			buildPhases = (
+				26FE4B04303B000000EB2026 /* Sources */,
+				26FE4B05303B000000EB2026 /* Frameworks */,
+				26FE4B06303B000000EB2026 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				26FE4B03303B000000EB2026 /* HyseWatch */,
+			);
+			name = HyseWatch;
+			packageProductDependencies = (
+			);
+			productName = HyseWatch;
+			productReference = 26FE4B02303B000000EB2026 /* HyseWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26F35A5C3038B4DB00A4431A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 2660;
+				TargetAttributes = {
+					26F35A633038B4DB00A4431A = {
+						CreatedOnToolsVersion = 26.6;
+						LastSwiftMigration = 2660;
+					};
+					26FE480430398B1F00EB2026 = {
+						CreatedOnToolsVersion = 26.6;
+					};
+					26FE4B01303B000000EB2026 = {
+						CreatedOnToolsVersion = 26.6;
+					};
+				};
+			};
+			buildConfigurationList = 26F35A5F3038B4DB00A4431A /* Build configuration list for PBXProject "Hyse" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+			);
+			mainGroup = 26F35A5B3038B4DB00A4431A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 26F35A653038B4DB00A4431A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26F35A633038B4DB00A4431A /* Hyse */,
+				26FE480430398B1F00EB2026 /* HyseWIdget */,
+				26FE4B01303B000000EB2026 /* HyseWatch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		26F35A623038B4DB00A4431A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26FE480330398B1F00EB2026 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26FE4B06303B000000EB2026 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26F35A603038B4DB00A4431A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26FE49503039B3B700EB2026 /* CalorieTrackerApp/LanguageStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26FE480130398B1F00EB2026 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26FE4A00303A500000EB2026 /* CalorieTrackerApp/TrainingActivityAttributes.swift in Sources */,
+				A1E5C0000000000000000003 /* CalorieTrackerApp/HyseConfiguration.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26FE4B04303B000000EB2026 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		26FE481A30398B2000EB2026 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26FE480430398B1F00EB2026 /* HyseWIdget */;
+			targetProxy = 26FE481930398B2000EB2026 /* PBXContainerItemProxy */;
+		};
+		26FE4B0D303B000000EB2026 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26FE4B01303B000000EB2026 /* HyseWatch */;
+			targetProxy = 26FE4B0C303B000000EB2026 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		26F35A6D3038B4DD00A4431A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1E5C0000000000000000001 /* Hyse.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "$(HYSE_DEVELOPMENT_TEAM)";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		26F35A6E3038B4DD00A4431A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1E5C0000000000000000001 /* Hyse.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "$(HYSE_DEVELOPMENT_TEAM)";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		26F35A703038B4DD00A4431A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APS_ENVIRONMENT = development;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = CalorieTrackerApp/CalorieTrackerApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "$(HYSE_DEVELOPMENT_TEAM)";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CalorieTrackerApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Hyse;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Hyse verwendet die Kamera zum Scannen von Barcodes sowie zum Aufnehmen von Essens- und Trainingsfotos.";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Hyse verwendet Face ID zum Zurücksetzen eines vergessenen Schutzcodes.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Liest deine Aktivitätskalorien für die Kalorienbilanz.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Hyse speichert auf Wunsch deine erfassten Nährwerte einschließlich Vitaminen und Mineralstoffen, Trinkmengen und Gewicht in Apple Health.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Hyse verwendet deinen Standort, um Fitnessstudios in deiner Nähe anzuzeigen.";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(HYSE_BUNDLE_ID)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CalorieTrackerApp/CalorieTrackerApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		26F35A713038B4DD00A4431A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APS_ENVIRONMENT = production;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = CalorieTrackerApp/CalorieTrackerApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "$(HYSE_DEVELOPMENT_TEAM)";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CalorieTrackerApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Hyse;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Hyse verwendet die Kamera zum Scannen von Barcodes sowie zum Aufnehmen von Essens- und Trainingsfotos.";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Hyse verwendet Face ID zum Zurücksetzen eines vergessenen Schutzcodes.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Liest deine Aktivitätskalorien für die Kalorienbilanz.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Hyse speichert auf Wunsch deine erfassten Nährwerte einschließlich Vitaminen und Mineralstoffen, Trinkmengen und Gewicht in Apple Health.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Hyse verwendet deinen Standort, um Fitnessstudios in deiner Nähe anzuzeigen.";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(HYSE_BUNDLE_ID)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CalorieTrackerApp/CalorieTrackerApp-Bridging-Header.h";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		26FE481D30398B2000EB2026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APS_ENVIRONMENT = development;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = CalorieWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "$(HYSE_DEVELOPMENT_TEAM)";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CalorieWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CalorieWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(HYSE_BUNDLE_ID).WIdget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		26FE481E30398B2000EB2026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APS_ENVIRONMENT = production;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = CalorieWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "$(HYSE_DEVELOPMENT_TEAM)";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CalorieWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CalorieWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(HYSE_BUNDLE_ID).WIdget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		26FE4B07303B000000EB2026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APS_ENVIRONMENT = development;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HyseWatch/HyseWatch.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "$(HYSE_DEVELOPMENT_TEAM)";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Hyse;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Hyse liest während eines Trainings Puls und aktive Kalorien von deiner Apple Watch.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Hyse speichert dein mit der Apple Watch aufgezeichnetes Training in Apple Health.";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKBackgroundModes = "workout-processing";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "$(HYSE_BUNDLE_ID)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(HYSE_BUNDLE_ID).watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Debug;
+		};
+		26FE4B08303B000000EB2026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APS_ENVIRONMENT = production;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HyseWatch/HyseWatch.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "$(HYSE_DEVELOPMENT_TEAM)";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Hyse;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Hyse liest während eines Trainings Puls und aktive Kalorien von deiner Apple Watch.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Hyse speichert dein mit der Apple Watch aufgezeichnetes Training in Apple Health.";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKBackgroundModes = "workout-processing";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "$(HYSE_BUNDLE_ID)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(HYSE_BUNDLE_ID).watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26F35A5F3038B4DB00A4431A /* Build configuration list for PBXProject "Hyse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26F35A6D3038B4DD00A4431A /* Debug */,
+				26F35A6E3038B4DD00A4431A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26F35A6F3038B4DD00A4431A /* Build configuration list for PBXNativeTarget "Hyse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26F35A703038B4DD00A4431A /* Debug */,
+				26F35A713038B4DD00A4431A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26FE481C30398B2000EB2026 /* Build configuration list for PBXNativeTarget "HyseWIdget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26FE481D30398B2000EB2026 /* Debug */,
+				26FE481E30398B2000EB2026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26FE4B09303B000000EB2026 /* Build configuration list for PBXNativeTarget "HyseWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26FE4B07303B000000EB2026 /* Debug */,
+				26FE4B08303B000000EB2026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 26F35A5C3038B4DB00A4431A /* Project object */;
+}

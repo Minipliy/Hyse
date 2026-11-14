@@ -1,0 +1,14 @@
+name: iOS build
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  ios:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build iOS app for simulator
+        run: xcodebuild -project Hyse.xcodeproj -scheme CalorieTrackerApp -configuration Debug -destination 'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO build

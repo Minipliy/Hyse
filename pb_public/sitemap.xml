@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://hyse.minipliy.net/en</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hyse.minipliy.net/en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hyse.minipliy.net/de"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hyse.minipliy.net/en"/>
+  </url>
+  <url>
+    <loc>https://hyse.minipliy.net/de</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hyse.minipliy.net/en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hyse.minipliy.net/de"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hyse.minipliy.net/en"/>
+  </url>
+  <url>
+    <loc>https://hyse.minipliy.net/en/features</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hyse.minipliy.net/en/features"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hyse.minipliy.net/de/funktionen"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hyse.minipliy.net/en"/>
+  </url>
+  <url>
+    <loc>https://hyse.minipliy.net/de/funktionen</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hyse.minipliy.net/en/features"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hyse.minipliy.net/de/funktionen"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hyse.minipliy.net/en"/>
+  </url>
+  <url>
+    <loc>https://hyse.minipliy.net/en/workouts</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hyse.minipliy.net/en/workouts"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hyse.minipliy.net/de/training"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hyse.minipliy.net/en"/>
+  </url>
+  <url>
+    <loc>https://hyse.minipliy.net/de/training</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hyse.minipliy.net/en/workouts"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hyse.minipliy.net/de/training"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hyse.minipliy.net/en"/>
+  </url>
+  <url>
+    <loc>https://hyse.minipliy.net/en/ios</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hyse.minipliy.net/en/ios"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hyse.minipliy.net/de/ios"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hyse.minipliy.net/en"/>
+  </url>
+  <url>
+    <loc>https://hyse.minipliy.net/de/ios</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hyse.minipliy.net/en/ios"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hyse.minipliy.net/de/ios"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hyse.minipliy.net/en"/>
+  </url>
+  <url>
+    <loc>https://hyse.minipliy.net/en/marketing</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hyse.minipliy.net/en/marketing"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hyse.minipliy.net/de/marketing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hyse.minipliy.net/en"/>
+  </url>
+  <url>
+    <loc>https://hyse.minipliy.net/de/marketing</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hyse.minipliy.net/en/marketing"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hyse.minipliy.net/de/marketing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hyse.minipliy.net/en"/>
+  </url>
+  <url>
+    <loc>https://hyse.minipliy.net/en/support</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hyse.minipliy.net/en/support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hyse.minipliy.net/de/support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hyse.minipliy.net/en"/>
+  </url>
+  <url>
+    <loc>https://hyse.minipliy.net/de/support</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hyse.minipliy.net/en/support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hyse.minipliy.net/de/support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hyse.minipliy.net/en"/>
+  </url>
+  <url>
+    <loc>https://hyse.minipliy.net/en/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hyse.minipliy.net/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hyse.minipliy.net/de/datenschutz"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hyse.minipliy.net/en"/>
+  </url>
+  <url>
+    <loc>https://hyse.minipliy.net/de/datenschutz</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hyse.minipliy.net/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hyse.minipliy.net/de/datenschutz"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hyse.minipliy.net/en"/>
+  </url>
+  <url>
+    <loc>https://hyse.minipliy.net/en/terms</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hyse.minipliy.net/en/terms"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hyse.minipliy.net/de/agb"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hyse.minipliy.net/en"/>
+  </url>
+  <url>
+    <loc>https://hyse.minipliy.net/de/agb</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hyse.minipliy.net/en/terms"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hyse.minipliy.net/de/agb"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hyse.minipliy.net/en"/>
+  </url>
+  <url>
+    <loc>https://hyse.minipliy.net/en/impressum</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hyse.minipliy.net/en/impressum"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hyse.minipliy.net/de/impressum"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hyse.minipliy.net/en/impressum"/>
+  </url>
+  <url>
+    <loc>https://hyse.minipliy.net/de/impressum</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hyse.minipliy.net/en/impressum"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hyse.minipliy.net/de/impressum"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hyse.minipliy.net/en/impressum"/>
+  </url>
+</urlset>

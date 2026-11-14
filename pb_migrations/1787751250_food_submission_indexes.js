@@ -1,0 +1,32 @@
+/// Dependent indexes installed after the repaired schema fields were committed.
+migrate((db) => {
+  const dao = new Dao(db)
+  const globals = dao.findCollectionByNameOrId("global_foods")
+  globals.indexes = globals.indexes.filter((value) => !value.includes("idx_global_foods_barcode_normalized") && !value.includes("idx_global_foods_approved_barcode"))
+  globals.indexes.push("CREATE INDEX `idx_global_foods_barcode_normalized` ON `global_foods` (`barcode_normalized`) WHERE `barcode_normalized` != ''")
+  globals.indexes.push("CREATE UNIQUE INDEX `idx_global_foods_approved_barcode` ON `global_foods` (`barcode_normalized`) WHERE `barcode_normalized` != '' AND `moderation_status` = 'approved'")
+  dao.saveCollection(globals)
+
+  const foods = dao.findCollectionByNameOrId("user_foods")
+  foods.indexes = foods.indexes.filter((value) => !value.includes("idx_user_foods_user_barcode_normalized") && !value.includes("idx_user_foods_user_source_key"))
+  foods.indexes.push("CREATE INDEX `idx_user_foods_user_barcode_normalized` ON `user_foods` (`user`, `barcode_normalized`) WHERE `record_type` = 'saved' AND `barcode_normalized` != ''")
+  foods.indexes.push("CREATE INDEX `idx_user_foods_user_source_key` ON `user_foods` (`user`, `record_type`, `source_key`)")
+  dao.saveCollection(foods)
+
+  const submissions = dao.findCollectionByNameOrId("global_food_submissions")
+  submissions.indexes = submissions.indexes.filter((value) => !value.includes("idx_global_submission_pending_create") && !value.includes("idx_global_submission_pending_update"))
+  submissions.indexes.push("CREATE UNIQUE INDEX `idx_global_submission_pending_update` ON `global_food_submissions` (`submitted_by`, `source_food`) WHERE `status` = 'pending' AND `submission_kind` = 'update' AND `source_food` != ''")
+  submissions.indexes.push("CREATE UNIQUE INDEX `idx_global_submission_pending_create` ON `global_food_submissions` (`submitted_by`, `personal_food_client_id`) WHERE `status` = 'pending' AND `submission_kind` = 'create' AND `personal_food_client_id` != ''")
+  dao.saveCollection(submissions)
+}, (db) => {
+  const dao = new Dao(db)
+  const globals = dao.findCollectionByNameOrId("global_foods")
+  globals.indexes = globals.indexes.filter((value) => !value.includes("idx_global_foods_barcode_normalized") && !value.includes("idx_global_foods_approved_barcode"))
+  dao.saveCollection(globals)
+  const foods = dao.findCollectionByNameOrId("user_foods")
+  foods.indexes = foods.indexes.filter((value) => !value.includes("idx_user_foods_user_barcode_normalized") && !value.includes("idx_user_foods_user_source_key"))
+  dao.saveCollection(foods)
+  const submissions = dao.findCollectionByNameOrId("global_food_submissions")
+  submissions.indexes = submissions.indexes.filter((value) => !value.includes("idx_global_submission_pending_create") && !value.includes("idx_global_submission_pending_update"))
+  dao.saveCollection(submissions)
+})

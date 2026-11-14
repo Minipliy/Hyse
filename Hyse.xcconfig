@@ -1,0 +1,20 @@
+// Hyse – zentrale Einstellungen für Xcode.
+// Wer die App selbst einrichtet, ändert nur die vier Werte unten.
+// Hinweis: In .xcconfig-Dateien beginnt "//" einen Kommentar. Deshalb steht
+// beim Server nur der Hostname ohne "https://".
+
+// Team-ID deines Apple-Developer-Kontos (10 Zeichen, z. B. AB12CD34EF).
+HYSE_DEVELOPMENT_TEAM = ABCDE12345
+
+// Eindeutige App-Kennung (Bundle-ID). Widget und Watch hängen ".WIdget"
+// bzw. ".watchkitapp" an.
+HYSE_BUNDLE_ID = com.deinname.hyse
+
+// App-Gruppe, über die App und Widgets Daten teilen.
+HYSE_APP_GROUP = group.com.deinname.hyse
+
+// Hostname deines PocketBase-Servers (ohne https:// und ohne Schrägstrich).
+HYSE_SERVER_HOST = hyse.deine-domain.de
+
+// E-Mail-Adresse für Support-Links in der App und für Anfragen an Open Food Facts.
+HYSE_CONTACT_EMAIL = du@deine-domain.de

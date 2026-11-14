@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow"><meta name="color-scheme" content="light dark">
+  <title>Confirm email address · Hyse</title>
+  <link rel="icon" href="/assets/hyse-app-icon.jpg"><link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+  <main class="confirmation-page">
+    <section class="confirmation-card" aria-live="polite">
+      <img src="/assets/hyse-app-icon.jpg" alt="" class="confirmation-logo">
+      <p class="eyebrow">Hyse account</p>
+      <h1 id="title">Confirm your email address</h1>
+      <p id="message" class="lead">This one-time link will update your Hyse account. No password is required.</p>
+      <button id="confirm" class="button" type="button">Confirm email address</button>
+      <p id="help" class="meta">The link expires after 30 minutes and can only be used once.</p>
+      <a id="home" class="button secondary" href="/" hidden>Back to Hyse</a>
+    </section>
+  </main>
+  <script>
+    (() => {
+      const token = new URLSearchParams(location.hash.slice(1)).get('token') || '';
+      const button = document.getElementById('confirm');
+      const title = document.getElementById('title');
+      const message = document.getElementById('message');
+      const help = document.getElementById('help');
+      const home = document.getElementById('home');
+      const showError = (text) => {
+        title.textContent = 'Link could not be confirmed';
+        message.textContent = text;
+        help.textContent = 'Open Hyse and request a new email change link.';
+        button.hidden = true; home.hidden = false;
+      };
+      if (!token) showError('This confirmation link is incomplete or invalid.');
+      button.addEventListener('click', async () => {
+        button.disabled = true; button.textContent = 'Confirming…';
+        try {
+          const response = await fetch('/api/hyse/confirm-email-change', {
+            method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ token })
+          });
+          if (!response.ok) throw new Error('This link is invalid, expired, or has already been used.');
+          history.replaceState(null, '', location.pathname);
+          title.textContent = 'Email address confirmed';
+          message.textContent = 'Your Hyse email address has been updated. Open the app and sign in again to refresh your account.';
+          help.textContent = 'For security, earlier sessions have been signed out.';
+          button.hidden = true; home.hidden = false;
+        } catch (error) { showError(error.message); }
+      });
+    })();
+  </script>
+</body>
+</html>

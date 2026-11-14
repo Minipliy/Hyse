@@ -1,0 +1,11 @@
+# Caddy leitet alle Anfragen an PocketBase weiter und kümmert sich
+# selbstständig um das HTTPS-Zertifikat für deine Domain.
+{$HYSE_DOMAIN} {
+	encode zstd gzip
+
+	# Verwaltungs-Schnittstellen nicht öffentlich erreichbar machen.
+	@admin path /api/hyse/admin/*
+	respond @admin 404
+
+	reverse_proxy pocketbase:8090
+}

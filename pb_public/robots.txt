@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /en
+Allow: /de
+Allow: /assets/
+Disallow: /api/
+Disallow: /_/
+Disallow: /email-change/
+Disallow: /oauth2-redirect
+
+Sitemap: https://hyse.minipliy.net/sitemap.xml
